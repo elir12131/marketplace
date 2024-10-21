@@ -1,0 +1,16 @@
+{
+  "name": "my-marketplace",
+  "version": "1.0.0",
+  "description": "A simple marketplace forwarding to Amazon",
+  "main": "script.js", // Change this from "index.js" to "script.js"
+  "scripts": {
+    "start": "node script.js" // This remains the same
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15",
+    "twilio": "^5.3.3"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="submit-order-page">
+        <div class="submit-order-container">
+            <h1>Submit Your Order</h1>
+
+            <div class="product-preview">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/71sMtWExYQL._AC_SL1500_.jpg" alt="Product Image">
+                </div>
+
+                <div class="order-details">
+                    <h1 id="title" class="a-size-large a-spacing-none">
+                        <span id="productTitle" class="a-size-large product-title-word-break">
+                            Tablet 10 inch Android 14 Tablet, 10GB RAM + 64GB ROM 1TB Expand, Octa-Core Tablets with GPS, 6000mAh, 1280x800 FHD Display, Dual Camera, WiFi, Bluetooth, GPS (Blue)
+                        </span>
+                    </h1>
+                    <p><strong>Price:</strong> $69.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-box">
+            <h2>Order Information</h2>
+                <form id="orderForm" action="/submit-order" method="POST" enctype="multipart/form-data">
+                    <label for="orderNumber">Order Number:</label>
+                    <input type="text" id="orderNumber" name="orderNumber" required>
+
+                    <label for="orderTotal">Order Total:</label>
+                    <input type="number" id="orderTotal" name="orderTotal" required>
+
+                    <label for="proofOfPurchase">Upload Proof of Purchase:</label>
+                    <input type="file" id="proofOfPurchase" name="proofOfPurchase" accept="image/*" required>
+
+                    <label for="paypalAddress">PayPal Address:</label>
+                    <input type="email" id="paypalAddress" name="paypalAddress" required>
+
+                    <button type="submit" class="submit-btn">Confirm Order</button>
+                </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

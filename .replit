@@ -1,0 +1,22 @@
+entrypoint = "script.js"
+modules = ["nodejs-20"]
+hidden = [".config", "package-lock.json"]
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
+
+[nix]
+channel = "stable-24_05"
+permittedInsecurePackages = ["qtwebkit-5.212.0-alpha4"]
+
+[unitTest]
+language = "nodejs"
+
+[deployment]
+run = ["node", "script.js"]
+deploymentTarget = "cloudrun"
+ignorePorts = false
+
+[[ports]]
+localPort = 3000
+externalPort = 80

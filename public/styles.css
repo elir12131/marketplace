@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: ##FFFFFF;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(to right, #b2e4db, #8ad5db); /* Apply the gradient */
+    width: 100%;
+    height: 120px; /* Change this value to set your desired header height */
+    box-sizing: border-box;
+    border-radius: 10px; /* Adjust the value for more or less curve */
+}
+
+.header-logo {
+    height: 150px; /* Sets the height */
+    width: auto;   /* Maintains aspect ratio */
+    margin-right: 1px;
+    margin-left: -5px; /* Moves the logo to the left */
+}
+
+
+.header-title {
+    flex-grow: 1;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Sriracha', cursive; /* Add the Luckiest Guy font */
+    letter-spacing: 1px; 
+    line-height: 1.2;
+}
+
+
+
+
+.top-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Curved edges for buttons */
+}
+
+.top-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.free-review-box {
+    background-color: white; /* Optional: Set a background color */
+    position: relative; /* Required for positioning the stars */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    width: 100%; /* Match the width of the header */
+    height: 250px; /* Adjust height as needed */
+    margin: 20px 0; /* Space above and below */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.review-image {
+    width: 100%; /* Make image cover the entire box */
+    height: 100%; /* Make image cover the entire box */
+    object-fit: cover; /* Ensure the image covers the box while maintaining aspect ratio */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.review-text {
+    position: absolute; /* Positioning to center the text */
+    top: 50%; /* Move to the middle */
+    left: 50%; /* Move to the middle */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
+}
+
+.star-rating {
+    position: absolute; /* Positioning to center the stars */
+    top: 62%; /* Move slightly below the text */
+    left: 50%; /* Move to the middle */
+    transform: translate(-50%, -50%); /* Center the stars */
+    font-size: 30px; /* Adjust size as needed */
+    color: gold; /* Change the color to gold */
+}
+
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.category-btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between products */
+    margin-bottom: 20px; /* Space below the grid */
+}
+
+.product {
+    background-color: white; /* Product box background */
+    border: 1px solid #ccc; /* Border for product box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for product content */
+    text-align: center; /* Center text inside box */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product-image {
+    height: 150px; /* Adjusted fixed height for product images */
+    width: 100%; /* Ensure image takes full width of the box */
+    object-fit: cover; /* Maintain aspect ratio of image */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 10px; /* Space above the product name */
+}
+
+.product-price {
+    color: green;
+    margin-top: 5px; /* Space above the price */
+}
+
+.buy-now {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submit-order {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submit-order:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+
+
+/* CSS for submit order page */
+.submit-order-container {
+    padding: 20px;
+    max-width: 900px;       /* Adjust width to accommodate product image and details */
+    margin: auto;
+    text-align: center;      /* Center-align text */
+}
+
+/* Amazon-like styling for submit order page */
+#productTitle {
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #333; /* Dark gray for the title */
+}
+
+.product-price {
+    color: #B12704; /* Amazon's price color: red */
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Additional layout styling */
+.product-preview {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.product-image img {
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-details p {
+    margin: 8px 0;
+}
+
+
+
+.submit-btn, .cancel-btn {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #FF9900;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #e68a00;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Container to hold both the submit order and the right box */
+.submit-order-page {
+    display: flex; /* Use flexbox to align the main content and the right box side by side */
+    justify-content: space-between; /* Space between main content and the right box */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.right-box {
+    width: 300px; /* Set width for the right box */
+    height: auto; /* Set to auto to accommodate content */
+    background-color: #ededed; /* Light gray color */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 10px; /* Rounded corners */
+    margin-left: 20px; /* Space between the content and the right box */
+    padding: 20px; /* Padding inside the box */
+}
+
+.right-box h2 {
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.right-box label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.right-box input[type="text"],
+.right-box input[type="email"],
+.right-box input[type="file"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the fields */
+    margin-bottom: 15px; /* Space below the fields */
+    border: 1px solid #ccc; /* Border for fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.right-box .submit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right-box .submit-btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #555; /* Dark gray footer */
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Space above footer */
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer label {
+    margin: 5px 0;
+}
+
+footer input {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

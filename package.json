@@ -2,9 +2,9 @@
   "name": "my-marketplace",
   "version": "1.0.0",
   "description": "A simple marketplace forwarding to Amazon",
-  "main": "script.js", // Change this from "index.js" to "script.js"
+  "main": "script.js",
   "scripts": {
-    "start": "node script.js" // This remains the same
+    "start": "node script.js"
   },
   "dependencies": {
     "body-parser": "^1.20.3",

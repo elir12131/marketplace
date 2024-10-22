@@ -1,0 +1,20 @@
+# Exported from Render on 2024-10-22T02:08:23Z
+services:
+- type: web
+  name: Reviewer's Marketplace
+  runtime: node
+  repo: https://github.com/elir12131/marketplace
+  plan: free
+  envVars:
+  - key: GMAIL_PASS
+    sync: false
+  - key: GMAIL_USER
+    sync: false
+  region: oregon
+  buildCommand: npm install
+  startCommand: npm start
+  domains:
+  - reviewersmarketplace.com
+  - www.reviewersmarketplace.com
+  autoDeploy: false
+version: "1"

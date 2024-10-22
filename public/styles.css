@@ -118,7 +118,6 @@ body {
     gap: 20px; /* Space between products */
     margin-bottom: 20px; /* Space below the grid */
 }
-
 .product {
     background-color: white; /* Product box background */
     border: 1px solid #ccc; /* Border for product box */
@@ -126,6 +125,9 @@ body {
     padding: 15px; /* Padding for product content */
     text-align: center; /* Center text inside box */
     transition: transform 0.3s; /* Animation on hover */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children */
 }
 
 .product:hover {
@@ -156,6 +158,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 10px; /* Space above the button */
 }
 
 .submit-order {
@@ -165,6 +168,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 10px; /* Space above the button */
 }
 
 .submit-order:hover {

@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+       <!-- Header Section (copied from index.html) -->
+       <div class="header">
+        <img src="https://live.staticflickr.com/65535/54081869848_e575184171_o.png" alt="Reviewer’s Logo" class="header-logo">
+        <div class="header-title">Reviewer's<br>Marketplace</div>
+        <div class="top-buttons">
+            <button class="top-btn">About Us</button>
+            <button class="top-btn">Contact Us</button>
+            <button class="top-btn">Sell Here</button>
+        </div>
+
     <div class="submit-order-page">
         <div class="submit-order-container">
             <h1>Submit Your Order</h1>
@@ -29,24 +39,25 @@
 
         <div class="right-box">
             <h2>Order Information</h2>
-                <form id="orderForm" action="/submit-order" method="POST" enctype="multipart/form-data">
-                    <label for="orderNumber">Order Number:</label>
-                    <input type="text" id="orderNumber" name="orderNumber" required>
+            <form id="orderForm" action="/submit-order" method="POST" enctype="multipart/form-data">
+                <label for="orderNumber">Order Number:</label>
+                <input type="text" id="orderNumber" name="orderNumber" required>
 
-                    <label for="orderTotal">Order Total:</label>
-                    <input type="number" id="orderTotal" name="orderTotal" required>
+                <label for="orderTotal">Order Total:</label>
+                <input type="number" id="orderTotal" name="orderTotal" required>
 
-                    <label for="proofOfPurchase">Upload Proof of Purchase:</label>
-                    <input type="file" id="proofOfPurchase" name="proofOfPurchase" accept="image/*" required>
+                <label for="proofOfPurchase">Upload Proof of Purchase:</label>
+                <input type="file" id="proofOfPurchase" name="proofOfPurchase" accept="image/*" required>
 
-                    <label for="paypalAddress">PayPal Address:</label>
-                    <input type="email" id="paypalAddress" name="paypalAddress" required>
+                <label for="paypalAddress">PayPal Address:</label>
+                <input type="email" id="paypalAddress" name="paypalAddress" required>
 
-                    <button type="submit" class="submit-btn">Confirm Order</button>
-                </form>
-
+                <button type="submit" class="submit-btn">Confirm Order</button>
+            </form>
         </div>
     </div>
+
+ 
 
     <script src="script.js"></script>
 </body>

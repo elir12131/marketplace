@@ -1,0 +1,88 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding on body */
+    }
+
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust automatically */
+        align-items: center; /* Center header content */
+    }
+
+    .header-logo {
+        height: 100px; /* Adjust logo height */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Space below logo */
+    }
+
+    .header-title {
+        font-size: 22px; /* Adjust font size */
+        text-align: center; /* Center the title */
+    }
+
+    .submit-order-container, .right-box {
+        max-width: 100%; /* Full width on mobile */
+        padding: 10px; /* Reduced padding */
+        margin: 10px 0; /* Margin around the container */
+    }
+
+    .top-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+    }
+
+    .top-btn {
+        width: 100%; /* Full width for buttons */
+        margin-bottom: 10px; /* Space below buttons */
+    }
+
+    .free-review-box {
+        height: 200px; /* Adjust height for mobile */
+    }
+
+    .review-text {
+        font-size: 20px; /* Smaller text size */
+    }
+
+    .category-buttons {
+        flex-direction: column; /* Stack category buttons vertically */
+        align-items: center; /* Center buttons */
+    }
+
+    .category-btn {
+        width: 100%; /* Full width for category buttons */
+        margin-bottom: 10px; /* Space below buttons */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+
+    .product {
+        padding: 10px; /* Reduced padding for products */
+    }
+
+    .product-image {
+        height: 120px; /* Adjust product image height */
+    }
+
+    .right-box {
+        margin: 0 auto; /* Center right box */
+        padding: 15px; /* Reduced padding */
+        width: auto; /* Allow width to adjust */
+    }
+
+    form {
+        gap: 10px; /* Reduce gap between form fields */
+    }
+
+    .footer {
+        padding: 10px; /* Reduced padding for footer */
+    }
+
+    footer input, footer button {
+        width: 100%; /* Full width for footer inputs and buttons */
+        margin: 5px 0; /* Space between elements */
+    }
+}

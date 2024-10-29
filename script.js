@@ -1,4 +1,7 @@
-// server.js
+require('dotenv').config(); // Add this line at the top of your script.js
+
+
+// script.js
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -17,7 +20,7 @@ app.use(express.static('public'));
 // Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'public/uploads'); // Ensure this directory exists
+        cb(null, '/workspaces/marketplace/public'); // Ensure this directory exists
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname)); // Append timestamp to the file name

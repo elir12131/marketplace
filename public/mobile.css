@@ -1,0 +1,192 @@
+/* mobile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px; /* Reduced padding for smaller screens */
+    background-color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px; /* Reduced padding */
+    background: linear-gradient(to right, #b2e4db, #8ad5db);
+    width: 100%;
+    height: auto; /* Change to auto for responsiveness */
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.header-logo {
+    height: 100px; /* Reduced height for mobile */
+    width: auto;
+    margin-right: 1px;
+    margin-left: -5px;
+}
+
+.header-title {
+    flex-grow: 1;
+    font-size: 20px; /* Reduced font size for mobile */
+    font-weight: bold;
+    font-family: 'Sriracha', cursive;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* General Page Layout */
+.submit-order-page {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items at the top */
+    gap: 10px; /* Reduced gap for smaller screens */
+}
+
+/* Adjust button styles for smaller screens */
+.top-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px;
+}
+
+.top-btn {
+    padding: 8px 12px; /* Reduced padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Slightly smaller border radius */
+}
+
+.top-btn:hover {
+    background-color: #45a049;
+}
+
+/* Container for all order content */
+.submit-order-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    width: 100%; /* Full width */
+    margin: 10px auto; /* Reduced margin */
+    padding: 10px; /* Reduced padding */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+/* Styling for product preview and image */
+.product-preview {
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center items */
+    margin-bottom: 10px; /* Reduced space below preview */
+}
+
+/* Adjust product image styles */
+.product-preview img {
+    max-width: 90%; /* Make image responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Order Details */
+.order-details {
+    margin-top: 0; /* Reset margin */
+    padding-top: 5px;
+    font-size: 14px; /* Reduced font size */
+    color: #333;
+}
+
+/* Right Box Styling */
+.right-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    max-width: 90%; /* Full width for mobile */
+    background-color: #FFFFFF;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px auto; /* Center the right box in the container */
+    margin-top: 10px; /* Margin above the right box */
+    padding: 15px; /* Reduced padding */
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Reduced gap */
+}
+
+/* General button styles */
+.submit-btn {
+    padding: 10px; /* Padding for buttons */
+    background-color: #ffd812;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Custom button styling */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 15px; /* Reduced padding */
+    background-color: #ffa41c;
+    color: #333;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for custom button */
+.custom-file-upload:hover {
+    background-color: #fa8900;
+    color: #000;
+}
+
+/* Hover effect for buttons */
+.submit-btn:hover {
+    background-color: #f7ca00; /* Darker green on hover */
+}
+
+/* General styling for form fields */
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="file"] {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Slightly smaller text */
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect for fields */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="email"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+/* Label styling */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}

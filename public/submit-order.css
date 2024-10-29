@@ -124,7 +124,7 @@ body {
  
  /* Order Details */
  .order-details {
-   margin-top: -190px; /* Move it up */
+   margin-top: -100px; /* Move it up */
     padding-top: 5px; /* Adjust padding if needed */
     font-size: 15px; /* Adjust font size if necessary */
     color: #333; /* Adjust text color if needed */

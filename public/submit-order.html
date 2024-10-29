@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Your Order</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="submit-order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sriracha&display=swap" rel="stylesheet">
 </head>
 <body>
-       <!-- Header Section (copied from index.html) -->
-       <div class="header">
+    <!-- Header Section (copied from index.html) -->
+    <div class="header">
         <img src="https://live.staticflickr.com/65535/54081869848_e575184171_o.png" alt="Reviewer’s Logo" class="header-logo">
         <div class="header-title">Reviewer's<br>Marketplace</div>
         <div class="top-buttons">
@@ -16,24 +17,21 @@
             <button class="top-btn">Contact Us</button>
             <button class="top-btn">Sell Here</button>
         </div>
+    </div>
 
-    <div class="submit-order-page">
-        <div class="submit-order-container">
-            <h1>Submit Your Order</h1>
+    <div class="submit-order-container"> <!-- New Container for Flexbox -->
+        <div class="product-preview">
+            <div class="product-image">
+                <img src="https://m.media-amazon.com/images/I/71sMtWExYQL._AC_SL1500_.jpg" alt="Product Image">
+            </div>
 
-            <div class="product-preview">
-                <div class="product-image">
-                    <img src="https://m.media-amazon.com/images/I/71sMtWExYQL._AC_SL1500_.jpg" alt="Product Image">
-                </div>
-
-                <div class="order-details">
-                    <h1 id="title" class="a-size-large a-spacing-none">
-                        <span id="productTitle" class="a-size-large product-title-word-break">
-                            Tablet 10 inch Android 14 Tablet, 10GB RAM + 64GB ROM 1TB Expand, Octa-Core Tablets with GPS, 6000mAh, 1280x800 FHD Display, Dual Camera, WiFi, Bluetooth, GPS (Blue)
-                        </span>
-                    </h1>
-                    <p><strong>Price:</strong> $69.99</p>
-                </div>
+            <div class="order-details">
+                <h1 id="title" class="a-size-large a-spacing-none">
+                    <span id="productTitle" class="a-size-large product-title-word-break">
+                        Tablet 10 inch Android 14 Tablet, 10GB RAM + 64GB ROM 1TB Expand, Octa-Core Tablets with GPS, 6000mAh, 1280x800 FHD Display, Dual Camera, WiFi, Bluetooth, GPS (Blue)
+                    </span>
+                </h1>
+                <p><strong>Price:</strong> $69.99</p>
             </div>
         </div>
 
@@ -45,19 +43,19 @@
 
                 <label for="orderTotal">Order Total:</label>
                 <input type="number" id="orderTotal" name="orderTotal" required>
-
-                <label for="proofOfPurchase">Upload Proof of Purchase:</label>
-                <input type="file" id="proofOfPurchase" name="proofOfPurchase" accept="image/*" required>
-
+                
                 <label for="paypalAddress">PayPal Address:</label>
                 <input type="email" id="paypalAddress" name="paypalAddress" required>
 
+                <label for="file-upload" class="custom-file-upload">
+                    Order Screenshot
+                </label>
+                <input id="file-upload" type="file" name="file">
+                
                 <button type="submit" class="submit-btn">Confirm Order</button>
             </form>
         </div>
     </div>
-
- 
 
     <script src="script.js"></script>
 </body>
